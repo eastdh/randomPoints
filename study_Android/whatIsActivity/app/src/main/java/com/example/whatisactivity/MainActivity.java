@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import android.os.Bundle;
+
 //22.01.15 22:38 - ERROR NOT SOLVED (button issue)
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     //디자인 변수 선언
