@@ -1,4 +1,4 @@
-[3장 프래그먼트](https://wikidocs.net/96089, "wikidocs 안드로이드 헤엄치기")   
+[3장 프래그먼트](https://wikidocs.net/96089 "wikidocs 안드로이드 헤엄치기")   
 
 
 프래그먼트
@@ -20,5 +20,8 @@
 생명주기
 =======
 액티비티, 프래그먼트 등 우리가 볼 수 있는 것(UI)은 생명주기를 가짐.   
+생명주기의 예시: start, pause, stop, resume, ...   
+
+
 
 
