@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         //FrameLayout에 fragment_main.xml이 추가되도록 설정
 
         Button saveButton = findViewById(R.id.saveButton);
+
+        //저장 버튼 정의
         saveButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
