@@ -1,5 +1,7 @@
 package com.example.clone_todolist;
 
+import java.util.ArrayList;
+
 public class Note {
     //Right Click -> Generate -> Setter and Getter 에서 다음과 같이 만들 수 있음
     //_id 는 데이터베이스를 만들 때 만든 _id 대로 정렬할 때 사용
@@ -7,6 +9,7 @@ public class Note {
 
     int _id;
     String todo;
+    ArrayList items;
 
     public Note(int _id, String todo){
         this._id = _id;
