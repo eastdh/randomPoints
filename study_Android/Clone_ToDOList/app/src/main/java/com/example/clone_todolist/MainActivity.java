@@ -50,13 +50,15 @@ public class MainActivity extends AppCompatActivity {
         String todo = inputToDo.getText().toString();
         //EditText에 적힌 글을 String todo로 가져옴
 
-        String sqlSave = "insert into " + NoteDatabase.TABLE_NOTE + " (TODO) values ("
-                + "'" + todo + "')";
-        //todo로 가져온 글을 sql문으로 만듦
+        if(!todo.equals("")) {
+            String sqlSave = "insert into " + NoteDatabase.TABLE_NOTE + " (TODO) values ("
+                    + "'" + todo + "')";
+            //todo로 가져온 글을 sql문으로 만듦
 
-        NoteDatabase database = NoteDatabase.getInstance(context);
-        database.execSQL(sqlSave);
-        //execSQL로 sql문 실행, 가져온 글을 저장
+            NoteDatabase database = NoteDatabase.getInstance(context);
+            database.execSQL(sqlSave);
+            //execSQL로 sql문 실행, 가져온 글을 저장
+        }
 
        inputToDo.setText("");//저장 후 빈 칸으로 만들기
 
