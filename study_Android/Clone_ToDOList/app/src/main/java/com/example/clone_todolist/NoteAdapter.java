@@ -1,5 +1,6 @@
 package com.example.clone_todolist;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,14 +65,21 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
                     Toast.makeText(v.getContext(), "삭제되었습니다.", Toast.LENGTH_SHORT).show();
                 }
 
-                private void deleteToDo(String TODO){
+                Context context;
 
+                private void deleteToDo(String TODO){
+                    String deleteSQL = "delete from " + NoteDatabase.TABLE_NOTE + " where TODO = '"
+                            + TODO + "'";
+                    NoteDatabase database = NoteDatabase.getInstance(context);
+                    database.execSQL(deleteSQL);
                 }
                 //삭제 버튼을 누르면
                 //삭제 버튼을 누른 아이템의 Text를 받아 Text와 같은 데이터베이스의 값을 삭제
                 //그리고 Toast.makeText를 이용해 사용자에게 삭제됨을 알림
 
             });
+
+            
         }
 
 
