@@ -27,6 +27,7 @@ public class MainFragment extends Fragment{
         //이 상황을 인플레이션이라고 부름
 
         initUI(rootView);
+        loadNoteListData();
 
         return rootView;
     }
