@@ -12,11 +12,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import java.util.ArrayList;
 
 public class MainFragment extends Fragment{
     private static final String TAG = "MainFragment";
+
+    SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     //화면을 생성할 때가 아닌 구성할 때, 즉 생성된 이후에 호출되는 역할.
@@ -28,6 +31,15 @@ public class MainFragment extends Fragment{
 
         initUI(rootView);
         loadNoteListData();
+
+        swipeRefreshLayout = (SwipeRefreshLayout) rootView.findViewById(R.id.refresh_layout);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {//새로고침 될 때마다 리스트를 로드함
+                loadNoteListData();
+                swipeRefreshLayout.setRefreshing(false);//이 문장이 없으면 무한새로고침
+            }
+        });
 
         return rootView;
     }
