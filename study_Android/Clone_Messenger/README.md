@@ -12,3 +12,6 @@
 2022-01-27 
 [UI 만들기](https://wikidocs.net/111713)   
 
+2022-01-28
+[리사이클러뷰에 어댑터 연결하기](https://wikidocs.net/111714 "WikiDocs")   
+
