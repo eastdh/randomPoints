@@ -7,9 +7,9 @@
 
     <TextView
         android:id="@+id/nameText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@android:drawable/arrow_up_float"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
         android:textSize="14sp"
         android:textStyle="bold" />
 
@@ -17,7 +17,7 @@
         android:id="@+id/msgText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/arrow_down_float"
+        android:background="@android:drawable/editbox_background"
         android:textSize="24sp" />
 
 </LinearLayout>

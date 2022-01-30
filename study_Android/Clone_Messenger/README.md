@@ -19,3 +19,7 @@
 2022-01-29
 [데이터베이스 추가하기](https://wikidocs.net/111715 "WikiDocs")
 >3-1까지 진행
+
+2022-01-30
+[Firebase를 이용하여 기능 추가하기](https://wikidocs.net/111722 "3-2")   
+>끝~~

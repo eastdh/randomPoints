@@ -1,5 +1,6 @@
 package com.example.clone_messenger;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
         public TextView nameText;
         public TextView msgText;
         public View rootView;
+        public LinearLayout msgLinear;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -34,6 +36,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
             nameText = itemView.findViewById(R.id.nameText);
             msgText = itemView.findViewById(R.id.msgText);
             rootView = itemView;
+            msgLinear = itemView.findViewById(R.id.msgLinea);
 
             itemView.setEnabled(true);  //뷰 활성화
             itemView.setClickable(true);//클릭 허용
@@ -59,6 +62,18 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
 
         holder.nameText.setText(chat.getName());
         holder.msgText.setText(chat.getMsg());
+        
+        if(chat.getName().equals(this.name)){   //사용자 이름 == 데이터베이스에 저장된 이름(본인 채팅)
+            holder.nameText.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
+            holder.msgText.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
+            
+            holder.msgLinear.setGravity(Gravity.RIGHT);
+        } else {                                //사용자 이름 != 데이터베이스에 저장된 이름(타인 채팅)
+            holder.nameText.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            holder.msgText.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+
+            holder.msgLinear.setGravity(Gravity.LEFT);
+        }
 
     }
 
