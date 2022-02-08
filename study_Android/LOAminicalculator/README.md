@@ -17,9 +17,9 @@
 - 추가 예정   
 
 ---
-## LOG
-> TIL이나 개발 일지 등 진행 상황   
+## Daily Log
+> TIL이나 개발 일지 등 그 날의 진행 상황   
 
 [2022-02-07] 프로젝트 주제 선정, 간략한 UI설정   
-[2022-02-08] `README.md` 개요 작성, [TableLayout](https://www.youtube.com/watch?v=DkxPfcIyoRg "YouTube") 사용법 학습 
+[2022-02-08] `README.md` 개요 작성, [TableLayout 사용법](https://www.youtube.com/watch?v=DkxPfcIyoRg "YouTube")  학습 
 
