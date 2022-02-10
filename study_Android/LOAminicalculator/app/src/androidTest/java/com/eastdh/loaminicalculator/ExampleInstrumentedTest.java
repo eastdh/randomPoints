@@ -1,4 +1,4 @@
-package com.example.loaminicalculator;
+package com.eastdh.loaminicalculator;
 
 import android.content.Context;
 

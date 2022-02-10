@@ -1,4 +1,4 @@
-package com.example.loaminicalculator;
+package com.eastdh.loaminicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
