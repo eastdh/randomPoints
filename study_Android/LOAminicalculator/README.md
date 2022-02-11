@@ -92,8 +92,9 @@
 **2022-02-09**   
     각 [기능 설계](#기능-설계)의 세부적인 설계 작성
 
-**2022-02-11**
-    UI수정, FloatingActionButton 사용법 학습 - hint 버튼 등에 활용
+**2022-02-11**   
+    UI수정, FloatingActionButton 사용법 학습 - hint 버튼 등에 활용   
+    [상단바 (Toolbar) 사용법](https://game-happy-world.tistory.com/11 "tistory") 학습
 
 
 

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LOAMiniCalculator">
         <activity
-            android:name="com.google.eastdh.loaminicalculator.MainActivity"
+            android:name="com.eastdh.loaminicalculator.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
